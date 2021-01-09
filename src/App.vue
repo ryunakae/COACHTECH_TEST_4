@@ -24,9 +24,9 @@ export default {
   },
   data() {
     return {
-      hoverFlag: false,
       message: "",
-      n: ""
+      n: "",
+      hoverFlag: false,
     };
   },
   method: {
