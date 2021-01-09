@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <input type="text" v-model="n">
+      <input type="number" v-model="n">
       <button @click="leapYear">調べる</button>
       <p>{{message}}</p>
     </div>
@@ -29,7 +29,7 @@ export default {
       hoverFlag: false,
     };
   },
-  method: {
+  methods: {
     hover(){
       this.hoverFlag = true
     },
@@ -40,6 +40,9 @@ export default {
       if (this.n % 4 == 0 && this.n % 100 !== 0 || this.n % 400 == 0) {
         this.message = "閏年"
         console.log("閏年")
+      }
+      else {
+        this.message = "閏年ではない"
       }
     }
   }
