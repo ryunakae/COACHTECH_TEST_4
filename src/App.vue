@@ -39,6 +39,7 @@ export default {
     leapYear() {
       if (this.n % 4 == 0 && this.n % 100 !== 0 || this.n % 400 == 0) {
         this.message = "閏年"
+        console.log("閏年")
       }
     }
   }
