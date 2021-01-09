@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      message: "",
+      message: "閏年かどうかを判定します",
       n: "",
       hoverFlag: false,
     };
@@ -70,6 +70,7 @@ export default {
   background-color: #d4d4d4;
   margin: 0;
   padding: 10px;
+  font-size: 24px;
 }
 .contener div {
   line-height: 100px;
